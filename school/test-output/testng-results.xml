@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="162743" started-at="2017-10-07T07:23:19Z" finished-at="2017-10-07T07:26:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="162743" started-at="2017-10-07T07:23:19Z" finished-at="2017-10-07T07:26:02Z">
+      <class name="school_info.webelement">
+        <test-method status="PASS" signature="staff_detail()[pri:1, instance:school_info.webelement@2669b199]" name="staff_detail" duration-ms="70962" started-at="2017-10-07T12:53:19Z" finished-at="2017-10-07T12:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- staff_detail -->
+        <test-method status="PASS" signature="per_inf()[pri:2, instance:school_info.webelement@2669b199]" name="per_inf" duration-ms="22156" started-at="2017-10-07T12:54:30Z" finished-at="2017-10-07T12:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- per_inf -->
+        <test-method status="PASS" signature="sch_in()[pri:3, instance:school_info.webelement@2669b199]" name="sch_in" duration-ms="28014" started-at="2017-10-07T12:54:52Z" description="School info" finished-at="2017-10-07T12:55:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sch_in -->
+        <test-method status="PASS" signature="School_info()[pri:4, instance:school_info.webelement@2669b199]" name="School_info" duration-ms="41364" started-at="2017-10-07T12:55:20Z" description="To read School info" finished-at="2017-10-07T12:56:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- School_info -->
+      </class> <!-- school_info.webelement -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
