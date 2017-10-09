@@ -5,7 +5,8 @@
     <classes>
       <class name="school_info.webelement">
         <methods>
-          <include name="per_inf"/>
+          <include name="Sc_con"/>
+          <include name="Sc_cls"/>
           <include name="staff_detail"/>
           <include name="sch_in"/>
         </methods>

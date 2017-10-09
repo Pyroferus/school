@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -162,6 +163,73 @@ public class webelement
 			   System.out.println();
 			   
 		 }
+	
+	
+	@Test(priority=5,description="To read contacts")
+	
+	public void Sc_con()
+	{
+		
+		driver.findElement(By.xpath(".//*[@id='dispContactInfo_1']/a")).click();
+		
+		
+		int i=1;
+		    
+		    
+			try
+		    {
+		    while(true)
+		    {
+		    driver.findElement(By.xpath(".//*[@id='dispContactInfo']/div/div/div["+i+"]/label"));
+		    i++;
+		    }
+		    }
+		     catch(Throwable e)
+		    {
+		    	
+		    }
+		    
+		    int row=i-1;
+		    System.out.println("Number of rows present in table : "+row);
+		    
+		    
+		   for(int rr=1; rr<=row; rr++)
+			   
+		   {
+			
+							   
+	  System.out.println(driver.findElement(By.xpath(".//*[@id='dispContactInfo']/div/div/div["+rr+"]/label")).getText());
+		
+			   }
+			   System.out.println();
+			   
+		
+		
+	}
+	
+	@Test(priority=6,description="classes")
+	
+	public void Sc_cls() throws InterruptedException
+	{
+		
+		
+		driver.findElement(By.xpath(".//*[@id='dispClassses_2']/a")).click();
+		
+		Select sel=new Select(driver.findElement(By.xpath(".//*[@id='academicYearListId']")));
+		 List<WebElement> dropdown=sel.getOptions();
+		int list_size=dropdown.size(),i=0;
+		  
+		System.out.println(list_size);
+		
+		while(i<list_size)
+		{
+		  System.out.println(dropdown.get(i).getText());
+			sel.selectByIndex(i);
+			Thread.sleep(3000);
+			i++;
+		}
+		
+	}
 
 		
 	
